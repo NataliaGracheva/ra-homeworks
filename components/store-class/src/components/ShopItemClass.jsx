@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { ItemModel } from './models/ItemModel';
+import { ItemModel } from '../models/ItemModel';
 
 export default class ShopItemClass extends Component {
     static propTypes = {
-        item: propTypes.instanceOf(ItemModel).isRequired,
+        item: PropTypes.instanceOf(ItemModel).isRequired,
     }
 
     render() {
