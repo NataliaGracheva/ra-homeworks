@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.portfolio {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.toolbar {
+  margin: 20px 0 20px;
+  text-align: left;
+}
+
+.toolbar li {
+  display: inline-block;
+  list-style-type: none;
+  padding: 2px 10px;
+  border: 1px solid;
+  margin-left: 0px;
+  margin-right: 10px;
+}
+
+
+.active {
+  background-color: #282c34;
+  color: white;
+}
+
+.project-list {
+  column-gap: 10px;
+  column-count: 3;
+  text-align: center;
+}
+
+.project {
+  margin-bottom: 10px;
+}
+
+.project img {
+  max-width: 100%;
+}
