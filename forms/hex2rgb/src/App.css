@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root, form {
+  height: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input, .output {
+  width: 150px;
+  height: 40px;
+  border: 1px solid black;
+  font-size: 16px;
+  text-align: center 
+}
+
+.output {
+  margin-top: 5px;
+  background-color: white; 
+}
+
+
