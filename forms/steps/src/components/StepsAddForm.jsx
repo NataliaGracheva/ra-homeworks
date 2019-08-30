@@ -14,10 +14,9 @@ function StepsAddForm(props) {
     const handleSubmit = evt => {
         evt.preventDefault();
 
-        const stepsInfo = new StepsInfoModel(nanoid(), form.date, form.distance);
+        const stepsInfo = new StepsInfoModel(nanoid(), form.date, Number(form.distance));
         onAdd(stepsInfo);
         setForm({ date: '', distance: '' });
-        console.log(form);
     }
 
     return (

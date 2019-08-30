@@ -1,8 +1,8 @@
 class StepsInfoModel {
     constructor(id, date, distance) {
-    this.id = id;
-    this.date = date;
-    this.distance = distance;
+        this.id = id;
+        this.date = date;
+        this.distance = distance;
     }
-    }
-    export default StepsInfoModel;
+}
+export default StepsInfoModel;
