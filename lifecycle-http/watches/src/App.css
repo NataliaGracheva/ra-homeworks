@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 50px 0 0 50px;
+}
+
+label,
+.watch h4,
+.watch div {
+  display: inline-block;
+  width: 160px;
+  margin-left: 3px;
+}
+
+input,
+button {
+  height: 25px;
+}
+
+input {
+  width: 150px;
+  margin-right: 10px;
+  margin-left: 3px;
+  border-radius: 5px;
+}
+
+button {
+  border-radius: 5px;
+}
+
+button,
+.third-col {
+  width: 90px;
+  cursor: pointer;
+}
+
+.watch {
+  margin-top: 20px;
+}
