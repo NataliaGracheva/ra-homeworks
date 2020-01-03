@@ -1,11 +1,11 @@
 import React from 'react'
 
-export default function Note({ content, handleDelete }) {
+export default function Note({content, handleDelete }) {
     
   return (
-    <div>
-      <button onClick={handleDelete}>X</button>
+    <div className="note">
       <div>{content}</div>
+      <button onClick={handleDelete} className="delete-btn">X</button>
     </div>
   )
 }
