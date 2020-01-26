@@ -24,8 +24,8 @@ export default function serviceListReducer(state = initialState, action) {
 
     // filter added
     case FILTER_SERVICE:
-      const { filter } = action.payload;
-    // return state.filter(service => service.name.includes(filter));
+     const filter = action.payload.filter.trim();
+     return state.filter(o => o.name.includes(filter));
     
     case CANCEL_FILTER:
       return state;

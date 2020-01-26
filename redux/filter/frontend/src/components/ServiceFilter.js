@@ -4,6 +4,7 @@ import { changeFilterField, filterService, cancelFilter } from '../actions/actio
 
 function ServiceFilter() {
     const filter = useSelector(state => state.serviceFilter);
+    console.log(filter);
     const dispatch = useDispatch();
 
     const handleChange = evt => {
@@ -13,7 +14,7 @@ function ServiceFilter() {
 
     const handleSubmit = evt => {
         evt.preventDefault();
-        dispatch(filterService(filter.value));
+        dispatch(filterService(filter.filter));
     }
 
     const handleCancel = evt => {
@@ -23,7 +24,7 @@ function ServiceFilter() {
 
     return (
         <form onSubmit={handleSubmit}>
-            <input name='filter' onChange={handleChange} value={filter.value} />
+            <input name='filter' onChange={handleChange} value={filter.filter} />
             <button type='submit'>Search</button>
             <button onClick={handleCancel}>Cancel</button>
         </form>
