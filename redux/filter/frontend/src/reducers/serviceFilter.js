@@ -7,8 +7,8 @@ const initialState = {
 export default function serviceFilterReducer(state = initialState, action) {
     switch (action.type) {
         case CHANGE_FILTER_FIELD:
-            const { value } = action.payload;
-            return { filter: value };
+            const { filter } = action.payload;
+            return { filter };
 
         case FILTER_SERVICE:
             return { ...initialState };
